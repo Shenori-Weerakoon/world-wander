@@ -51,7 +51,7 @@ const Home = () => {
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Discover the World with GlobeTrekker</h1>
+          <h1 className="hero-title">Discover the World with World Wander</h1>
           <p className="hero-subtitle">Hover over a country to see its name, or click to explore details.</p>
         </div>
         {/*<div className="map-container">
