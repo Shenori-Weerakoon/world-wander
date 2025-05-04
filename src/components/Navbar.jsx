@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="custom-navbar">
       <div className="navbar-container">
-        <h1 className="navbar-brand">World Countries Explorer</h1>
+        <h1 className="navbar-brand">World Wander</h1>
         <button
           className="navbar-toggler"
           type="button"

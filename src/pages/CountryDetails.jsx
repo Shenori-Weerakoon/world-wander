@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchCountryByCode } from "../services/api";
-import "../styles/CountryDetails.css"; // Import custom CSS
+import "../styles/CountryDetails.css";
 
 const CountryDetails = () => {
   const { code } = useParams();
@@ -9,8 +9,20 @@ const CountryDetails = () => {
 
   useEffect(() => {
     const loadCountry = async () => {
-      const data = await fetchCountryByCode(code);
-      setCountry(data[0]);
+      try {
+        const data = await fetchCountryByCode(code);
+        setCountry(data[0]);
+        // Save the country to sessionStorage
+        if (data[0]) {
+          sessionStorage.setItem("lastViewedCountry", JSON.stringify({
+            name: data[0].name.common,
+            code: data[0].cca3,
+          }));
+        }
+      } catch (err) {
+        console.error(err);
+        setCountry(null);
+      }
     };
     loadCountry();
   }, [code]);
