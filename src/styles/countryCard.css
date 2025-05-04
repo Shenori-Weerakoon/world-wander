@@ -1,0 +1,47 @@
+/* Match navbar gradient theme */
+.custom-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 0.5rem !important;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important; /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  .custom-btn {
+    background: linear-gradient(to right, #2563eb, #4c1d95); /* Same gradient as navbar */
+    border: none;
+  }
+  
+  .custom-btn:hover {
+    background: linear-gradient(to right, #1d4ed8, #2e1065); /* Darker gradient on hover */
+    color: #facc15 !important; /* Yellow hover effect matching navbar */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+
+  .card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /* SemiBold for country name */
+    font-size: 1.25rem;
+    color: #1e293b;
+  }
+  
+  .card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Regular for population */
+    color: #4b5563;
+  }
+  
+  .custom-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /* SemiBold for button */
+    background: linear-gradient(to right, #2563eb, #4c1d95);
+    color: white;
+    border: none;
+  }

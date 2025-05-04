@@ -1,0 +1,34 @@
+.custom-details-card {
+    max-width: 600px; /* Matches Tailwind's max-w-2xl */
+    border-radius: 0.5rem !important;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .custom-details-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important; /* Enhanced shadow on hover */
+  }
+  
+  .custom-details-img {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+  
+  .custom-details-btn {
+    background: linear-gradient(to right, #2563eb, #4c1d95); /* Same gradient as navbar */
+    color: white;
+    border: none;
+  }
+  
+  .custom-details-btn:hover {
+    background: linear-gradient(to right, #1d4ed8, #2e1065); /* Darker gradient on hover */
+    color: #facc15 !important; /* Yellow hover effect matching navbar */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-title {
+    font-size: 1.875rem; /* Matches Tailwind's text-3xl */
+  }
+  
+  .card-text {
+    color: #4b5563; /* Matches Tailwind's text-gray-700 */
+  }

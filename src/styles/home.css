@@ -1,0 +1,7 @@
+.custom-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: linear-gradient(to right, #2563eb, #4c1d95);
+    margin-bottom: 1rem;
+  }
